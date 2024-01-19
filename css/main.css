@@ -121,6 +121,11 @@ a:link {
   justify-content: center;
   gap: 35px;
 }
+@media screen and (max-width: 1200px) {
+  .navigation-list {
+    display: none;
+  }
+}
 
 .navigation-list-link {
   color: #FFF;
