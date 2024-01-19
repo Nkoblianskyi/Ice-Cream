@@ -1,0 +1,135 @@
+.products {
+    margin-top: 60px;
+    position: relative;
+    background-color: #FFFFFF;
+}
+.products-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+    margin-bottom: 31px;
+}
+
+.title-top-text {
+    @include font ('Titan one', 18px, 400, normal);
+    color: #FFA5BA;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.title-bottom-text {
+    @include font ('Titan one', 34px, 400, normal);
+    color: #D41443;
+    text-align: center;
+    letter-spacing: 1.36px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+.products-card {
+        @media screen and (min-width: 768px) {
+                display: flex;
+                flex-direction: unset;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+            }
+}
+
+
+.products-card-item {
+    position: relative;
+    height: 485px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 130px;
+    &:first-child {
+        background-color: #FFA5BA;
+    }
+
+    &:nth-child(2) {
+        background-color: #F0D1A5;
+    }
+
+    &:nth-child(3) {
+        background-color: #C2E297;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .products-card-item:not(:last-child) {
+        margin-bottom: 130px;
+    }
+    
+}
+
+.card-image {
+    position: absolute;
+    top: -115px;
+    width: 249px;
+    height: 252px;
+    z-index: 1;
+}
+
+.card-item-title {
+    margin-top: 162px;
+    margin-bottom: 32px;
+    color: var(--text-menu--);
+        text-align: center;
+    @include font ('Titan one', 20px, 400, normal);
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        position: relative;
+    &::after {
+        content: '...';
+        height: 6px;
+        color: var(--text-menu--);
+        position: absolute;
+        display: block;
+        top: 40px;
+        left: 40%;
+        z-index: 2;
+    }
+}
+
+.card-item-text {
+    margin-top: 32px;
+    margin-bottom: 30px;
+    color: #FFF;
+    @include font ('DM Sans', 14px, 470, 1.52);
+        text-align: center;
+        letter-spacing: 0.56px;
+}
+
+.card-text-hidden {
+    display: none;
+    color: #FFF;
+    @include font ('DM Sans', 14px, 700, 1.52);
+    text-align: center;
+    letter-spacing: 0.56px;
+}
+
+.card-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.card-button-icon {
+    fill: var(--fill--);
+}
+
+

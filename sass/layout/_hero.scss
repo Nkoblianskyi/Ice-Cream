@@ -1,0 +1,248 @@
+.hero {
+    background-color: #FFB8CA;
+    overflow: hidden;
+}
+
+.hero-wrap {
+    position: relative;
+    height: 502px;
+    @media screen and (min-width: 768px) {
+        height: 399px;
+    }
+}
+
+.hero-ellipse {
+    width: 346px;
+    height: 344px;
+    border-radius: 50%;
+    background: #FFA5BA;
+    z-index: 0;
+    position: absolute;
+    right: -62px;
+    top: 83px;
+    @media screen and (min-width: 768px) {
+        top: 31px;
+        right: 137px;
+        width: 324px;
+        height: 322px;
+    }
+}
+
+
+
+.hero-img {
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    width: 171px;
+    height: 410px;
+    top: 92px;
+    right: 0px;
+    @media screen and (min-width: 768px) {
+        width: 143px;
+        height: 336px;
+        top: 63px;
+        right: 247px;
+    }
+}
+
+.hero-button{
+    margin-top: 193px;
+    padding-left: 20px;
+    z-index: 5;
+    @media screen and (min-width: 768px) {
+        margin-top: 102px;
+    }
+}
+
+.hero-title {
+    @include font ('Titan one', 26px, 400, normal);
+    letter-spacing: 1.04px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    color: var(--text-menu--);
+    letter-spacing: 1.04px;
+    text-transform: uppercase;
+    @media screen and (min-width: 768px) {
+        @include font ('Titan one', 22px, 400, normal);
+            letter-spacing: 0.88px;
+            text-transform: uppercase;
+    }
+}
+
+.hero-title-item {
+    @include font ('Titan one', 48px, 400, 0.96);
+    color: var(--text-menu-second--);
+    text-transform: uppercase;
+    @media screen and (min-width: 768px) {
+        @include font ('Titan one', 34px, 400, 0.9);
+    }
+
+}
+
+.hero-button {
+    position: absolute;
+    margin-bottom: 160px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 19px;
+    }
+}
+
+.hero-button-list {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.hero-button-left {
+    margin-right: 9px;
+    background-color: #D41443;
+    padding: 9px 16px;
+    justify-content: center;
+    border-radius: 16px;
+    border: transparent;
+    color: var(--text-menu--);
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 8px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.hero-button-right {
+    background-color: #FFF;
+    padding: 9px 16px;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-menu-second--);
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 8px;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 16px;
+    border: transparent;
+}
+
+.hero-milk {
+    display: none;
+    @media screen and (min-width: 768px) {
+    vertical-align: top;
+    margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+}
+
+.hero-milk-img {
+    width: 124px;
+    height: 126px;
+}
+
+.hero-milk-text {
+    @include font ( 'DM Sans', 8px, 400, 1.5);
+    color: #FFF;
+    position: relative;
+    width: 114px;
+}
+
+.milk-button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #FFF;
+    border: unset;
+    fill: var(--fill--);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 34px;
+    left: 144px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+}
+
+.hero-girl {
+    display: none;
+    position: absolute;
+    right: 54px;
+    top: 266px;
+    z-index: 1;
+    width: 168px;
+    height: 133px;
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+}
+
+.hero-number-list {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.hero-number-item {
+    position: absolute;
+    z-index: 1;
+    top: 116px;
+    right: 0px;
+}
+
+.hero-number-item {
+    min-width: 50px;
+}
+
+.hero-number-title {
+    position: relative;
+    z-index: 1;
+    display: block;
+    color: var(--text-menu-second--);
+    @include font( 'Titan One', 28px, 400, normal);
+        text-align: right;
+        letter-spacing: 1.12px;
+        text-transform: uppercase;
+}
+
+.hero-number-item:last-child {
+    top: 172px;
+}
+
+.number-text-top {
+    position: absolute;
+    z-index: 1;
+    bottom: -8px;
+    right: 2px;
+    color: #FFF;
+    @include font( 'DM Sans', 8px, 400, normal);
+        text-align: right;
+        line-height: normal;
+}
+
+.number-text-bottom {
+    position: absolute;
+    bottom: -10px;
+    right: 2px;
+    color: #FFF;
+    @include font('DM Sans', 8px, 400, normal);
+    text-align: right;
+    line-height: normal;
+    z-index: 1;
+}
+
+.hero-number-circle {
+    position: absolute;
+    z-index: 2;
+        top: -5px;
+        right: -5px;
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        background-color: #fff;
+        z-index: 0;
+        transform-origin: 35%;
+        animation: rotatingCircle 3s linear infinite;
+}
+
