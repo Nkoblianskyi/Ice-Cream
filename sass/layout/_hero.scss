@@ -9,6 +9,9 @@
     @media screen and (min-width: 768px) {
         height: 399px;
     }
+    @media screen and (min-width: 768px) {
+        height: 665px;
+    }
 }
 
 .hero-ellipse {
@@ -25,6 +28,12 @@
         right: 137px;
         width: 324px;
         height: 322px;
+    }
+    @media screen and (min-width: 1200px) {
+        top: 52px;
+        right: 267px;
+        width: 538px;
+        height: 538px;
     }
 }
 
@@ -44,14 +53,11 @@
         top: 63px;
         right: 247px;
     }
-}
-
-.hero-button{
-    margin-top: 193px;
-    padding-left: 20px;
-    z-index: 5;
-    @media screen and (min-width: 768px) {
-        margin-top: 102px;
+    @media screen and (min-width: 1200px) {
+        width: 236px;
+        height: 557px;
+        top: 108px;
+        right: 435px;
     }
 }
 
@@ -66,8 +72,11 @@
     @media screen and (min-width: 768px) {
         @include font ('Titan one', 22px, 400, normal);
             letter-spacing: 0.88px;
-            text-transform: uppercase;
     }
+    @media screen and (min-width: 1200px) {
+            @include font ('Titan one', 38px, 400, normal);
+            letter-spacing: 1.52px;
+        }
 }
 
 .hero-title-item {
@@ -77,14 +86,26 @@
     @media screen and (min-width: 768px) {
         @include font ('Titan one', 34px, 400, 0.9);
     }
-
+    @media screen and (min-width: 1200px) {
+        @include font ('Titan one', 58px, 400, 0.9);
+        letter-spacing: 2.32px;
+    }
 }
 
 .hero-button {
     position: absolute;
+    margin-top: 193px;
+    padding-left: 20px;
+    z-index: 5;
     margin-bottom: 160px;
     @media screen and (min-width: 768px) {
         margin-bottom: 19px;
+        margin-top: 102px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 56px;
+        margin-top: 171px;
+        padding-left: 85px;
     }
 }
 
@@ -107,6 +128,10 @@
     font-size: 8px;
     font-weight: 600;
     line-height: normal;
+
+    &:hover, &:focus {
+        background-color: var(--back-hover-pink--);
+    }
 }
 
 .hero-button-right {
@@ -122,6 +147,9 @@
     line-height: normal;
     border-radius: 16px;
     border: transparent;
+    &:hover, &:focus {
+        background-color: var(--back-hover-white--);
+    }
 }
 
 .hero-milk {
@@ -133,11 +161,22 @@
     align-items: center;
     justify-content: center;
     }
+    @media screen and (min-width: 1200px) {
+        margin-top: 56px;
+        margin-left: -38px;
+    }
 }
 
 .hero-milk-img {
     width: 124px;
     height: 126px;
+    @media screen and (min-width: 1200px) {
+        // position: absolute;
+        width: 188px;
+        height: 191px;
+        left: 77px;
+        bottom: 45px;
+    }
 }
 
 .hero-milk-text {
@@ -145,6 +184,12 @@
     color: #FFF;
     position: relative;
     width: 114px;
+
+    @media screen and (min-width: 1200px) {
+        @include font ('DM Sans', 14px, 400, 1.4);
+        width: 200px;
+        bottom: 20px;
+    }
 }
 
 .milk-button {
@@ -163,6 +208,17 @@
     @media screen and (min-width: 768px) {
         display: flex;
     }
+
+    @media screen and (min-width: 1200px) {
+        left: 238px;
+        bottom: 56px;
+    }
+
+    &:hover {
+        fill: #FFF;
+        background-color: var(--back-hover-pink--);
+        transform: scale(1.3);
+    }
 }
 
 .hero-girl {
@@ -175,6 +231,12 @@
     height: 133px;
     @media screen and (min-width: 768px) {
         display: block;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 293px;
+        height: 232px;
+        top: 433px;
+        right: 94px;
     }
 }
 
@@ -189,10 +251,23 @@
     z-index: 1;
     top: 116px;
     right: 0px;
+    @media screen and (min-width: 1200px) {
+        top: 160px;
+        right: 100px;
+    }
 }
 
 .hero-number-item {
     min-width: 50px;
+    &:last-child {
+        top: 172px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        &:last-child {
+            top: 251px;
+        }
+    }
 }
 
 .hero-number-title {
@@ -206,9 +281,7 @@
         text-transform: uppercase;
 }
 
-.hero-number-item:last-child {
-    top: 172px;
-}
+
 
 .number-text-top {
     position: absolute;
