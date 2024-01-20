@@ -1078,6 +1078,11 @@ a:link {
     width: 180px;
   }
 }
+@media screen and (min-width: 767px) {
+  .about-list-item {
+    width: 330px;
+  }
+}
 
 .about-list-img {
   margin: 0;
@@ -1090,15 +1095,49 @@ a:link {
   font-size: 36px;
   font-weight: 400;
   line-height: normal;
-  font-family: "Titan One";
   letter-spacing: 1.44px;
   text-transform: uppercase;
 }
+@media screen and (min-width: 768px) {
+  .about-list-title {
+    font-family: "Titan One";
+    font-size: 48px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.92px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about-list-title {
+    font-family: "Titan One";
+    font-size: 58px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.32px;
+  }
+}
 
 .about-list-text {
-  color: var(--text-second--);
+  color: var(--text-first--);
   font-family: "DM Sans";
   font-size: 12px;
   font-weight: 700;
   line-height: 1.7;
+}
+@media screen and (min-width: 768px) {
+  .about-list-text {
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.74;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about-list-text {
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.76;
+    letter-spacing: 0.32px;
+  }
 }/*# sourceMappingURL=main.css.map */

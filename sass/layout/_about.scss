@@ -166,28 +166,6 @@
     }
 }
 
-// .about-back-image {
-//     position: absolute;
-//     left: 0px;
-//     top: 700px;
-//     width: 100%;
-//     height: 133px;
-
-//     @media screen and (min-width: 768px) {
-//         display: none;
-//     }
-//     @media screen and (min-width: 1280px) {
-//         display: block;
-//         height: 534px;
-//         top: 342px;
-//         @media (min-device-pixel-ratio: 2),
-//             (min-resolution: 192dpi),
-//             (min-resolution: 2dppx) {
-//                 background-image: url(../images/images-desktop/about-milk-desc-2x.png);
-//             }
-//     }
-// }
-
 .about-list {
     margin-top: 40px;
     justify-content: start;
@@ -216,7 +194,10 @@
     }
     @media screen and (min-width: 767px) {
         width: 180px;
-        }
+    }
+    @media screen and (min-width: 767px) {
+        width: 330px;
+    }
 }
 
 .about-list-img {
@@ -227,12 +208,27 @@
 .about-list-title {
     color: var(--title-second--);
     @include font('Titan One', 36px, 400, normal);
-        font-family: "Titan One";
         letter-spacing: 1.44px;
         text-transform: uppercase;
+    @media screen and (min-width: 768px) {
+        @include font('Titan One', 48px, 400, normal);
+            letter-spacing: 1.92px;
+    }
+    @media screen and (min-width: 1280px) {
+        @include font('Titan One', 58px, 400, normal);
+            letter-spacing: 2.32px;
+    }
 }
 
 .about-list-text {
-    color: var(--text-second--);
+    color: var(--text-first--);
     @include font('DM Sans', 12px, 700, 1.7);
+    @media screen and (min-width: 768px) {
+            @include font('DM Sans', 14px, 700, 1.74);
+        }
+
+    @media screen and (min-width: 1280px) {
+        @include font('DM Sans', 16px, 700, 1.76);
+            letter-spacing: 0.32px;
+    }
 }
