@@ -447,14 +447,12 @@ a:link {
 .hero-button-list {
   display: flex;
   align-items: center;
-  justify-content: start;
 }
 
 .hero-button-left {
   margin-right: 9px;
   background-color: #D41443;
   padding: 9px 16px;
-  justify-content: center;
   border-radius: 16px;
   border: transparent;
   color: var(--text-menu--);
@@ -471,8 +469,6 @@ a:link {
 .hero-button-right {
   background-color: #FFF;
   padding: 9px 16px;
-  justify-content: center;
-  align-items: center;
   color: var(--text-menu-second--);
   text-align: center;
   font-family: DM Sans;
@@ -813,7 +809,6 @@ a:link {
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -845,6 +840,23 @@ a:link {
   text-transform: uppercase;
   margin-bottom: 15px;
 }
+@media screen and (min-width: 768px) {
+  .about-title {
+    font-family: "Titan One";
+    font-size: 26px;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about-title {
+    font-family: "Titan One";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.2px;
+  }
+}
 
 .about-title-second {
   color: var(--title-second--);
@@ -856,6 +868,35 @@ a:link {
   letter-spacing: 1.36px;
   text-transform: uppercase;
   margin-bottom: 26px;
+}
+
+.about-back {
+  background-image: url(/images/milk-about-1x.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left bottom 659px;
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .about-back {
+    background-image: url(/images/milk-about-2x.png);
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-back {
+    background-image: none;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about-back {
+    background-size: 1280px;
+    background-position: left top 209px;
+    background-image: url(/images/images-desktop/about-milk-desc.png);
+  }
+}
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .about-back {
+    background-image: url(/images/images-desktop/about-milk-desc-2x.png);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -888,9 +929,13 @@ a:link {
   .about-image {
     width: 516px;
     height: 516px;
-    margin-left: 98px;
     margin-right: 37px;
     margin-top: 55px;
+  }
+}
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .about-image {
+    background-image: url(../images/images-desktop/about-cow-desc-2x.png);
   }
 }
 
@@ -903,6 +948,7 @@ a:link {
   .about-text-wrap {
     margin-left: 37px;
     margin-right: 102px;
+    width: 463px;
   }
 }
 
@@ -943,6 +989,26 @@ a:link {
   margin-top: 23px;
   margin-bottom: 23px;
 }
+@media screen and (min-width: 768px) {
+  .about-text-second {
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.76;
+    letter-spacing: 0.56px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about-text-second {
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.94;
+    letter-spacing: 0.56px;
+    padding-top: 35px;
+    margin-bottom: 45px;
+  }
+}
 
 .about-button {
   margin-top: 23px;
@@ -969,25 +1035,16 @@ a:link {
 }
 @media screen and (min-width: 768px) {
   .about-button {
-    width: 170px;
-  }
-}
-
-.about-back-image {
-  position: absolute;
-  left: 0px;
-  top: 700px;
-  width: 100%;
-  height: 133px;
-}
-@media screen and (min-width: 768px) {
-  .about-back-image {
-    display: none;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    width: 176px;
   }
 }
 
 .about-list {
-  margin-top: 20px;
+  margin-top: 40px;
   justify-content: start;
   align-items: center;
 }
@@ -1002,6 +1059,12 @@ a:link {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about-list {
+    margin-top: 20px;
+    justify-content: space-around;
   }
 }
 

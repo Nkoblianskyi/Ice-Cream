@@ -112,14 +112,12 @@
 .hero-button-list {
     display: flex;
     align-items: center;
-    justify-content: start;
 }
 
 .hero-button-left {
     margin-right: 9px;
     background-color: #D41443;
     padding: 9px 16px;
-    justify-content: center;
     border-radius: 16px;
     border: transparent;
     color: var(--text-menu--);
@@ -137,8 +135,6 @@
 .hero-button-right {
     background-color: #FFF;
     padding: 9px 16px;
-    justify-content: center;
-    align-items: center;
     color: var(--text-menu-second--);
     text-align: center;
     font-family: DM Sans;
