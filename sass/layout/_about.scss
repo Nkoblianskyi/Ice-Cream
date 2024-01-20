@@ -1,0 +1,149 @@
+.about {
+    width: 100%;
+    padding-top: 125px;
+    padding-bottom: 145px;
+    background-color: #FFF5F6;
+    position: relative;
+}
+
+
+.about-title {
+    color: var(--title-first--);
+    @include font( 'Titan One', 18px, 400, normal);
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+}
+
+.about-title-second {
+    color: var(--title-second--);
+    @include font( 'Titan One', 34px, 400, normal);
+        text-align: center;
+        letter-spacing: 1.36px;
+        text-transform: uppercase;
+        margin-bottom: 26px;
+}
+
+.about-top-wrap {
+    @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+}
+
+.about-image {
+    width: 100%;
+    margin-bottom: 23px;
+        background-repeat: no-repeat;
+            background-size: contain;
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../images/cow-mob-2x.png);
+            }
+    @media screen and (min-width: 768px) {
+        width: 340px;
+        height: 339px;
+        margin: 0;
+    }
+}
+
+.about-text-wrap {
+    margin-top: 23px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.about-text {
+    color: var(--text-first--);
+    @include font('DM Sans', 12px, 500, 1.62);
+    margin-bottom: 23px;
+}
+
+.about-text-second {
+    color: var(--text-second--);
+    @include font('DM Sans', 12px, 500, 1.62);
+    margin-top: 23px;
+    margin-bottom: 23px;
+}
+
+.about-button {
+    margin-top: 23px;
+    margin-bottom: 20px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: var(--text-btn-pink--);
+    @include font('DM Sans', 14px, 700, normal);
+    text-align: center;
+    background-color: var(--background-white-btn--);
+    border-radius: 22px;
+    border: unset;
+    height: 44px;
+    padding-left: 37px;
+    padding-right: 37px;
+    &:hover, &:focus {
+        background-color: var(--back-hover-white--);
+    }
+    @media screen and (min-width: 768px) {
+        width: 170px;
+    }
+}
+
+.about-back-image {
+    position: absolute;
+    left: 0px;
+    top: 700px;
+    width: 100%;
+    height: 133px;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.about-list {
+    margin-top: 20px;
+    justify-content: start;
+    align-items: center;
+    @media screen and (max-width: 767px) {
+        width: 230px;
+    }
+    @media screen and (min-width: 768px) {
+        margin-top: 33px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.about-list-item {
+    @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: 46px;
+        }
+    }
+    @media screen and (min-width: 767px) {
+        width: 180px;
+        }
+}
+
+.about-list-img {
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.about-list-title {
+    color: var(--title-second--);
+    @include font('Titan One', 36px, 400, normal);
+        font-family: "Titan One";
+        letter-spacing: 1.44px;
+        text-transform: uppercase;
+}
+
+.about-list-text {
+    color: var(--text-second--);
+    @include font('DM Sans', 12px, 700, 1.7);
+}
