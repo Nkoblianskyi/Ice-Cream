@@ -47,18 +47,38 @@
         height: 339px;
         margin: 0;
     }
+    @media screen and (min-width: 1280px) {
+        width: 516px;
+        height: 516px;
+        margin-left: 98px;
+        margin-right: 37px;
+        margin-top: 55px;
+    }
 }
 
 .about-text-wrap {
     margin-top: 23px;
     padding-left: 35px;
     padding-right: 35px;
+    @media screen and (min-width: 1280px) {
+        margin-left: 37px;
+        margin-right: 102px;
+    }
 }
 
 .about-text {
     color: var(--text-first--);
     @include font('DM Sans', 12px, 500, 1.62);
     margin-bottom: 23px;
+    @media screen and (min-width: 768px) {
+            @include font('DM Sans', 14px, 500, 1.76);
+            letter-spacing: 0.64px;
+        }
+    @media screen and (min-width: 1280px) {
+    @include font('DM Sans', 16px, 500, 1.76);  
+            letter-spacing: 0.64px;
+            padding-top: 51px;
+    }
 }
 
 .about-text-second {

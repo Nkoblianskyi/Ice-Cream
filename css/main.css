@@ -884,11 +884,26 @@ a:link {
     margin: 0;
   }
 }
+@media screen and (min-width: 1280px) {
+  .about-image {
+    width: 516px;
+    height: 516px;
+    margin-left: 98px;
+    margin-right: 37px;
+    margin-top: 55px;
+  }
+}
 
 .about-text-wrap {
   margin-top: 23px;
   padding-left: 35px;
   padding-right: 35px;
+}
+@media screen and (min-width: 1280px) {
+  .about-text-wrap {
+    margin-left: 37px;
+    margin-right: 102px;
+  }
 }
 
 .about-text {
@@ -898,6 +913,25 @@ a:link {
   font-weight: 500;
   line-height: 1.62;
   margin-bottom: 23px;
+}
+@media screen and (min-width: 768px) {
+  .about-text {
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.76;
+    letter-spacing: 0.64px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about-text {
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.76;
+    letter-spacing: 0.64px;
+    padding-top: 51px;
+  }
 }
 
 .about-text-second {
